@@ -8,15 +8,6 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get('/', (req, res, next) => {
-    res.status(200).json({
-        status: 'success',
-        data: {
-            name: 'Task'
-        }
-    });
-});
-
 app.get('/search', (req, res) => {
     res.render('search', { movieDetails:'' });
 });
