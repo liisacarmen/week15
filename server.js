@@ -13,7 +13,6 @@ app.get('/', (req, res, next) => {
         status: 'success',
         data: {
             name: 'Task'
-            version: '0.1.0'
         }
     });
 });
