@@ -32,6 +32,10 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/search', (req, res) => {
+    res.render('search', { movieDetails:'' });
+});
+
 app.post('/search', (req, res) => {
     let userMovieTitle = req.body.movieTitle;
 
